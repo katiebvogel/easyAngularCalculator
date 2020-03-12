@@ -43,7 +43,7 @@ export class CalculatorComponent implements OnInit {
   }
 
   public getOperation(op: string) {
-
+    console.log('op: ', op);
     if(this.firstOperand === null) {
       this.firstOperand = Number(this.currentNumber);
     } else if(this.operator) {
